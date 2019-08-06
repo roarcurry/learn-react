@@ -16,6 +16,18 @@
     /*
      功能: 动态展示列表数据
      */
+    const names = ['jQuery', 'zepto', 'Angular', 'React', 'Vue'];
+
+    // 1. 创建虚拟 DOM
+    const ul = (
+      <ul>
+        {
+          names.map((name, index) => <li key={index}>{name}</li>)
+        }
+      </ul>
+    );
+    // 2. 渲染虚拟 DOM
+    ReactDOM.render(ul, document.getElementById('example1'));
   </script>
 </body>
 </html>

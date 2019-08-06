@@ -13,7 +13,7 @@
 
   <script type="text/babel">/* 必须声明 babel，告诉 babel.js 解析里面的 jsx 的代码 */
     // 1. 创建虚拟 DOM 元素对象
-    var vDom = <h1>Hello React!</h1>; // 不是字符串
+    var vDom = <h1>Hello React!</h1>; // 不是字符串，不能加单引号或双引号
 
     // 2. 将虚拟 DOM 渲染到页面真实 DOM 容器中
     ReactDOM.render(vDom, document.getElementById('test'));

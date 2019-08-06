@@ -8,5 +8,25 @@
   <div id="test1"></div>
   <div id="test2"></div>
 
+  <script type="text/javascript" src="../js/react.development.js"></script>
+  <script type="text/javascript" src="../js/react-dom.development.js"></script>
+  <script type="text/javascript" src="../js/babel.min.js"></script>
+
+  <script type="text/javascript"> /* 因为没有用到 JSX 语法，所以不用声明 babel */
+    const msg = "I Like You";
+    const myId = "root";
+
+    // 1. 创建虚拟 DOM
+    const vDom1 = React.createElement('h1', {id:myId.toLowerCase()}, msg.toUpperCase());
+    // 2. 渲染虚拟 DOM
+    ReactDOM.render(vDom1, document.getElementById('test1'));
+  </script>
+
+  <script type="text/babel"> /* 用了 JSX 语法，所以要声明 babel */
+    // 1. 创建虚拟 DOM
+    const vDom2 = <h3 od="{myId.toUpperCase()}">{msg.toLowerCase()}</h3>
+    // 2. 渲染虚拟 DOM
+    ReactDOM.render(vDom2, document.getElementById('test2'));
+  </script>
 </body>
 </html>
