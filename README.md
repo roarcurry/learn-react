@@ -1,4 +1,4 @@
-## Learn React
+# Learn React
 此仓库为学习 React 时跟着老师写的 practice code.
 
 ## 学习教程
