@@ -46,6 +46,6 @@ class App extends Component{
 }
 
 export default connect(
-    (state) => ({comments: state.comments}),
+    (state) => ({comments: state.comments.comments}),
     {addComment, deleteComment, getComments}
 )(App);
